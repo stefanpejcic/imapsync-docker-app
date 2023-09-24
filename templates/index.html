@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>imapsync Web App</title>
+</head>
+<body>
+    <h1>imapsync Web App</h1>
+    <form method="POST" action="/run_imapsync">
+        <h2>Source Email Server</h2>
+        <label for="source_host">Host:</label>
+        <input type="text" id="source_host" name="source_host"><br><br>
+        <label for="source_user">Username:</label>
+        <input type="text" id="source_user" name="source_user"><br><br>
+        <label for="source_password">Password:</label>
+        <input type="password" id="source_password" name="source_password"><br><br>
+
+        <h2>Target Email Server</h2>
+        <label for="target_host">Host:</label>
+        <input type="text" id="target_host" name="target_host"><br><br>
+        <label for="target_user">Username:</label>
+        <input type="text" id="target_user" name="target_user"><br><br>
+        <label for="target_password">Password:</label>
+        <input type="password" id="target_password" name="target_password"><br><br>
+
+        <input type="submit" value="Run imapsync">
+    </form>
+</body>
+</html>
